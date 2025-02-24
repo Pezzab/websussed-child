@@ -1,7 +1,4 @@
 module.exports = {
-  // corePlugins: {
-  //   preflight: false,
-  //   },
   purge: {
     enabled: true,
     content: ['./**/*.{php,html,css}', './safelist.txt'],
@@ -31,7 +28,6 @@ module.exports = {
     extend: {
       colors: {
         'mytest' : '#867434',
-        'mytest-2' : 'mytest',
       },
     },
   },
