@@ -1,0 +1,33 @@
+/*!
+ * Theme Name: Websussed Child
+ * Template: websussed-core
+ * Description: Barebones ready to tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
+ */
+
+@config "./../../tailwind.config.js";
+/* @import "tailwindcss"; */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: dotted;
+    border-color: #e5e7eb;
+  }
+
+  .header-layout_two div {
+    /* max-width: 870px;
+    margin: 0 auto;
+    position: relative; */
+  }
+
+  .header-layout_two::before {
+        /* content: ''; */
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+
+    p {
+      /* @apply bg-mytest; */
+    }
