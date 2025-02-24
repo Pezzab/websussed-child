@@ -27,7 +27,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        'mytest' : '#867434',
+        'linkcol' : 'blue',
+        'hovercol' : 'darkblue',
+        'entrycol' : 'whitesmoke',
+        'copycol' : 'darkslategray',
       },
     },
   },

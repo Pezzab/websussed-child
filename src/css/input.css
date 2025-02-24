@@ -16,10 +16,16 @@
 
   body {
     @apply font-sans;
+    @apply bg-entrycol;
+    @apply text-copycol;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading; 
+  }
+
+  a {
+    @apply text-linkcol;
   }
 
   .header-layout_two div {
@@ -37,7 +43,7 @@
     }
 
     p {
-      @apply bg-mytest;
+
     }
 
 /* Devstyles */
@@ -62,9 +68,9 @@
  .content_wysiwyg,
  .content_html,
  .edit_custom {
-  background-color:rgb(107, 218, 218);
+  /* background-color:rgb(107, 218, 218);
     @apply border-t;
-  border-color: rgb(20, 116, 116);
+  border-color: rgb(20, 116, 116); */
  }
  
  /* constraint content to reading width */
@@ -84,26 +90,25 @@
  .content_wysiwyg > *,
  .content_html > *
  {
-    background-color: rgb(125, 232, 195)
+    /* background-color: rgb(125, 232, 195)
     @apply border-t;
-    border-color: #86efac;
+    border-color: #86efac; */
  }
 
 
 .content_html {
-    background-color: rgb(233, 210, 97);
+    /* background-color: rgb(233, 210, 97);
     @apply border-t;
-    border-color: rgb(221, 187, 13);
+    border-color: rgb(221, 187, 13); */
 }
 
 .content_wysiwyg {
-  background-color: rgb(233, 210, 97);
+  /* background-color: rgb(233, 210, 97);
     @apply border-t;
-    border-color: rgb(221, 187, 13);
+    border-color: rgb(221, 187, 13); */
 }
 
 p {
-    background-color: rgb(63, 214, 214);
-    /* @apply bg-mytest; */
+    /* background-color: rgb(63, 214, 214); */
 }
  
