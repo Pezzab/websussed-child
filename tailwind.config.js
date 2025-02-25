@@ -29,8 +29,9 @@ module.exports = {
       colors: {
         'linkcol' : 'blue',
         'hovercol' : 'darkblue',
-        'entrycol' : 'whitesmoke',
+        'bodycol' : 'whitesmoke',
         'copycol' : 'darkslategray',
+        'ctacol' : 'orange',
       },
     },
   },

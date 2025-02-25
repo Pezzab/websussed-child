@@ -2,8 +2,16 @@
 /*!
  * Theme Name: Websussed Child
  * Template: websussed-core
- * Description: Barebones ready to tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
+ * Description: Barebones ready to go tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
  */
+:root, :host {
+  --font-heading: "Bebas Neue", "sans-serif";
+  --color-linkcol: blue;
+  --color-hovercol: darkblue;
+  --color-bodycol: whitesmoke;
+  --color-copycol: darkslategray;
+  --color-ctacol: orange;
+}
 *, ::after, ::before {
   box-sizing: border-box;
   border-width: 0;
@@ -11,15 +19,18 @@
   border-color: #e5e7eb;
 }
 body {
-  font-family: Helvetica;
-  background-color: whitesmoke;
-  color: darkslategray;
+  font-family: var(--font-heading);
+  color: var(--color-copycol);
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Bebas Neue;
+  font-family: var(--font-heading);
 }
 a {
-  color: blue;
+  color: var(--color-linkcol);
+}
+a:hover {
+  color: var(--color-hovercol);
+  text-decoration-line: underline;
 }
 .header-layout_two::before {
   position: relative;

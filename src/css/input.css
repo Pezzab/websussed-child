@@ -1,11 +1,19 @@
 /*!
  * Theme Name: Websussed Child
  * Template: websussed-core
- * Description: Barebones ready to tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
+ * Description: Barebones ready to go tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
  */
 
-@config "./../../tailwind.config.js";
 /* @import "tailwindcss"; */
+
+@theme { 
+    --font-heading: "Bebas Neue", "sans-serif";
+    --color-linkcol: blue;
+    --color-hovercol: darkblue;
+    --color-bodycol: whitesmoke;
+    --color-copycol: darkslategray;
+    --color-ctacol: orange;
+}
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -15,8 +23,8 @@
   }
 
   body {
-    @apply font-sans;
-    @apply bg-entrycol;
+    @apply font-heading;
+    /* @apply ; */
     @apply text-copycol;
   }
 
@@ -26,6 +34,11 @@
 
   a {
     @apply text-linkcol;
+  }
+
+  a:hover {
+    @apply text-hovercol;
+    @apply underline;
   }
 
   .header-layout_two div {
