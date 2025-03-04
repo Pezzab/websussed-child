@@ -4,10 +4,15 @@
  * Description: Barebones ready to go tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
  */
 
-/* @import "tailwindcss"; */
+/* @layer theme, base, components, utilities; */
+@config "./../../tailwind.config.js"; 
 
-@theme { 
-    --font-heading: "Bebas Neue", "sans-serif";
+@import "tailwindcss";
+
+@theme {
+    /* --color */
+    --font-heading: "Bebas Neue";
+    --font-sans: "Helvetica";
     --color-linkcol: blue;
     --color-hovercol: darkblue;
     --color-bodycol: whitesmoke;
@@ -22,9 +27,96 @@
     border-color: #e5e7eb;
   }
 
+/* ________________________________________________________________   header layout */
+
+/* _____________________   horizontal and vertical padding */
+
+.content_wysiwyg,
+.contact-details,
+header#masthead,
+.site-navigation,
+header#blog {
+
+}
+
+header#masthead {}
+
+/* _____________________   site and content width */
+
+.site-width {
+    background-color: cornsilk;
+}
+
+.content_wysiwyg .site-width > * {
+  /* @apply max-w-[870px];
+  @apply mx-auto;
+  @apply px-4; */
+}
+
+/* ________________________________________________________________   main layout */
+
+/* _____________________   horizontal and vertical padding */
+
+main#primary {}
+
+#breadcrumbs,
+article,
+.post-navigation,
+.posts-navigation,
+.comments-area,
+.widget,
+main .content_wysiwyg,
+.edit_custom {
+    /* @apply px-24; */
+}
+
+article,
+.comments-area,
+main > header {
+}
+
+.entry-content,
+.entry-footer {
+}
+
+/* _____________________   site and content width */
+
+main#primary > header .site-width > *,
+article header > *,
+article .post-thumbnail > *,
+.entry-content,
+.entry-summary > *,
+.post-navigation > *,
+.posts-navigation > *,
+.comments-area > *,
+.widget > *,
+.entry-footer > *,
+main#primary .content_wysiwyg .site-width > * {
+   /* @apply max-w-[870px];
+   @apply mx-auto;
+   @apply px-4; */
+}
+
+main#primary .site-width {
+  background-color: burlywood;
+}
+
+/* ________________________________________________________________  footer layout */
+
+/* _____________________   horizontal and vertical padding */
+
+footer#colophon {
+  /* @apply px-24; */
+}
+
+/* _____________________   site and content width */
+
+
+/* ________________________________________________________________  typography */
+
+
   body {
-    @apply font-heading;
-    /* @apply ; */
+    @apply font-sans;
     @apply text-copycol;
   }
 
@@ -40,24 +132,6 @@
     @apply text-hovercol;
     @apply underline;
   }
-
-  .header-layout_two div {
-    /* max-width: 870px;
-    margin: 0 auto;
-    position: relative; */
-  }
-
-  .header-layout_two::before {
-        /* content: ''; */
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-    }
-
-    p {
-
-    }
 
 /* Devstyles */
 

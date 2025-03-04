@@ -5,8 +5,8 @@ module.exports = {
   },
   theme: {
     fontFamily:{
-      'heading': ['Bebas Neue'],
-      'sans': ['Helvetica'],
+      // 'heading': ['Bebas Neue'],
+      // 'sans': ['Helvetica'],
     },
     screens: {
       'mddown': { 'max': '767px' },
