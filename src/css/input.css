@@ -133,12 +133,62 @@ footer#colophon {
     @apply underline;
   }
 
-/* Devstyles */
+/* ________________________________________________________________   responsive nav-menu button */
 
+.menu-toggle {
+  @apply bg-[#0000ff];
+}
 
-/* full width containers always go to screen edge
- * makes sure all content has padding keeping it away from the screen edge
- */
+button.menu-toggle {
+  @apply lg:hidden;
+}
+
+.menu-toggle {
+  @apply opacity-100;
+}
+
+.burger {
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  background: #f9f9f9;
+
+}
+
+.burger::before,
+.burger::after {
+}
+
+.burger::before {
+}
+
+.burger::after {
+}
+
+.burger.burger-1,
+.burger.burger-1::before,
+.burger.burger-1::after {
+  /* transition-timing-function: ease-in-out;
+  transition-duration: 0.2s; */
+}
+
+.toggled .burger.burger-1 {
+  /* transform: translateX(-50px);
+  background: transparent; */
+}
+
+.toggled .burger.burger-1::before {
+  /* transform: rotate(-45deg) translate(30px, 40px); */
+}
+
+.toggled .burger.burger-1::after {
+  /* transform: rotate(45deg) translate(30px, -42px); */
+}
+
+/* ________________________________________________________________   Dev styles */
+
  .contact-details,
  .site-header,
  .site-navigation,
@@ -198,4 +248,6 @@ footer#colophon {
 p {
     /* background-color: rgb(63, 214, 214); */
 }
+
+
  

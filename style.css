@@ -540,6 +540,20 @@ a:hover {
   color: var(--color-hovercol);
   text-decoration-line: underline;
 }
+.menu-toggle {
+  background-color: #0000ff;
+}
+button.menu-toggle {
+  @media (width >= 1024px) {
+    display: none;
+  }
+}
+.menu-toggle {
+  opacity: 100%;
+}
+.burger, .burger::before, .burger::after {
+  background: #f9f9f9;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
