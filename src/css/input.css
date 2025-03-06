@@ -249,5 +249,12 @@ p {
     /* background-color: rgb(63, 214, 214); */
 }
 
+/* ________________________________________________________________   Override content width */
 
- 
+
+.entry-header.max-content,
+.entry-content.max-content,
+.entry-footer.max-content {
+    @apply max-w-none;
+    @apply mx-0;
+}

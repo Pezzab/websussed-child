@@ -554,6 +554,10 @@ button.menu-toggle {
 .burger, .burger::before, .burger::after {
   background: #f9f9f9;
 }
+.entry-header.max-content, .entry-content.max-content, .entry-footer.max-content {
+  max-width: none;
+  margin-inline: calc(var(--spacing) * 0);
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
