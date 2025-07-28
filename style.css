@@ -673,12 +673,6 @@
   border-style: dotted;
   border-color: #e5e7eb;
 }
-.site-width {
-  background-color: cornsilk;
-}
-main#primary .site-width {
-  background-color: burlywood;
-}
 body {
   font-family: var(--font-sans);
   color: var(--color-copycol);

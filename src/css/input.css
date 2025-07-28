@@ -56,7 +56,7 @@ header#masthead {}
 /* _____________________   site and content width */
 
 .site-width {
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 }
 
 .content_wysiwyg .site-width > * {
@@ -110,7 +110,7 @@ main#primary .content_wysiwyg .site-width > * {
 }
 
 main#primary .site-width {
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 /* ________________________________________________________________  footer layout */
