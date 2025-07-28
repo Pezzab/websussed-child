@@ -40,9 +40,21 @@ function webussed_child_add_fonts() {
 
     // https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap
 
-
-
-
 }
 
 add_action( 'wp_enqueue_scripts', 'webussed_child_add_fonts' );
+
+
+// use priority 11 to hook into after_setup_theme AFTER the parent theme
+ add_action('after_setup_theme', 'reset_parent_setup', 11);
+
+function reset_parent_setup() 
+{
+    // Override the image sizes
+    add_image_size( 'wpex-entry', 800, 9999, false );
+    add_image_size( 'wpex-post', 800, 9999, false );
+
+    // Set content width variable
+    // global $content_width;
+    // $content_width = 850;
+}
