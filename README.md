@@ -1,1 +1,1 @@
-# websussed-theme
+# websussed-child

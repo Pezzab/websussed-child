@@ -1,19 +1,19 @@
 <?php
 
-function websussed_theme_enqueue_styles() {
+function websussed_child_enqueue_styles() {
 $parent_style = 'parent-style';
    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 //    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ));
 }
-add_action( 'wp_enqueue_scripts', 'websussed_theme_enqueue_styles' ); 
+add_action( 'wp_enqueue_scripts', 'websussed_child_enqueue_styles' ); 
 
-function websussed_theme_unhook_parent_style() {
+function websussed_child_unhook_parent_style() {
 
   wp_dequeue_style( 'websussed-core' );
   wp_deregister_style( 'websussed-core' );
 
 }
-add_action( 'wp_enqueue_scripts', 'websussed_theme_unhook_parent_style', 20 );
+add_action( 'wp_enqueue_scripts', 'websussed_child_unhook_parent_style', 20 );
 
 
 function webussed_child_add_fonts() {

@@ -2,7 +2,7 @@
 /*!
  * Theme Name: Websussed Child
  * Template: websussed-core
- * Description: Barebones ready to go tailwind enabled child theme. Search replace 'websussed-theme' + 'websussed_theme' with your project theme title, then off you go!
+ * Description: Barebones ready to go tailwind enabled child theme. Search replace 'websussed-child' + 'websussed_child' with your project theme title, then off you go!
  */
 @layer theme, base, components, utilities;
 @layer theme {
