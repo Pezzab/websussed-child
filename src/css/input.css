@@ -32,6 +32,15 @@
     --color-linkdarkbg: #0097cc;
 }
 
+:root {
+  --site-width: 1240px;
+  --reading-width: 820px;
+  --wpcolumn-break: 1066px;
+  --accent01: #9b97c270;
+  --accent02: #afabdbb2;
+  --accent03: #d6d5e380;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
     border-width: 0;
@@ -55,14 +64,19 @@ header#masthead {}
 
 /* _____________________   site and content width */
 
-.site-width {
-    /* background-color: cornsilk; */
+.site-width,
+.comment-respond,
+aside{
+  @apply max-w-[var(--site-width)];
+  @apply mx-auto;
 }
 
-.content_wysiwyg .site-width > * {
-  /* @apply max-w-[870px];
-  @apply mx-auto;
-  @apply px-4; */
+.site-width,
+.comment-respond,
+aside {
+    @apply px-4;
+    @apply pb-2;
+    @apply pt-2;
 }
 
 /* ________________________________________________________________   main layout */
